@@ -3,7 +3,6 @@ import os
 from git import Repo
 
 
-
 def get_todos():
     file_types = [".py", ".html", ".js", ".css", ".md", ".txt"]
 
@@ -42,10 +41,12 @@ def get_todos():
     todos = custom_sorted(todos)
     return todos
 
+
 def print_todos():
     todos = get_todos()
     for todo in todos:
         print(todo)
+
 
 def coallate_todos():
     todos = get_todos()
