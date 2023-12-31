@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "lazy_ci"
+name = "Plain Text Project Management"
 authors = [{ name = "Calvin Loveland", email = "calvin@loveland.dev" }]
-description = "CI for lazy people (like me)"
+description = "A simple project management tool that doesn't suck."
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -18,19 +18,18 @@ dependencies = [
 "tqdm",
 "loguru",
 "GitPython",
-"prospector",
-"black"]
+"lazy_ci"]
 dynamic = ["version"]
 
 [project.scripts]
-"lazy_ci" = "lazy_ci.main:main"
+"ptpm" = "ptpm.main:main"
 
 [project.urls]
-"Issue Tracker" = "https://github.com/calvinloveland/lazy_ci/issues"
-"Repository" = "https://github.com/calvinloveland/lazy_ci"
+"Issue Tracker" = "https://github.com/calvinloveland/plaintext_project_management"
+"Repository" = "https://github.com/calvinloveland/plaintext_project_management"
 
 [tool.hatch.version]
-path = "src/lazy_ci/__about__.py"
+path = "src/ptpm/__about__.py"
 
 [tool.hatch.build]
 include = [
@@ -42,4 +41,4 @@ exclude = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/lazy_ci"]
+packages = ["src/ptpm"]
