@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "Plain Text Project Management"
+name = "ptpm"
 authors = [{ name = "Calvin Loveland", email = "calvin@loveland.dev" }]
 description = "A simple project management tool that doesn't suck."
 readme = "README.md"
